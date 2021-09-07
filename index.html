@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--  DAFTAR  -->
+    <form class="form_daftar" action="tugas2.html" method="post">
+
+        <h1>DAFTAR</h1>
+        <input type="text" name="username" id="username" placeholder="Username" required autocomplete="off">
+        <input type="password" name="password" id="password" placeholder="Password" required autocomplete="off">
+        <input type="password" name="konpassword" id="password" placeholder="Konfirmasi Password" required autocomplete="off">
+        <input type="submit" name="submit" value="DAFTAR">
+
+    </form>
+
+    <br> <br>
+
+
+<!--  FORMULIR  -->
+<div class="kotak_form">
+    <form class="form_kritik" action="tugas2.html" method="post">
+        <div class="judul">
+            Formulir Kritik & Saran
+        </div>
+        <div class="formulir">
+
+            <div class="input_data">
+                <label for="nama">Nama Lengkap</label>
+                <input class="input" type="text" name="nama" id="nama" placeholder="Nama Lengkap Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label for="email">Email</label>
+                <input class="input" type="email" name="email" id="email" placeholder="Email Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label for="tempat_lahir">Tempat Lahir</label>
+                <input class="input" type="text" name="tempat_lahir" id="tempat_lahir" placeholder="Tempat Lahir Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+                <input class="input" type="date" name="tanggal_lahir" id="tanggal_lahir">
+            </div>
+
+            <div class="input_data">
+                <label for="nohp">No. HP</label>
+                <input class="input" type="text" name="nohp" id="nohp" placeholder="No. HP Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <div class="kelamin">
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                    <label><input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Laki-Laki">Laki-Laki</label>
+                    <label><input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="input_data">
+                <label for="agama">Agama</label>
+                <div class="agama">
+                    <select name="agama" id="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="konghucu">Kong Hu Cu</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input_data">
+                <label for="nim">NIM</label>
+                <input class="input" type="text" name="nim" id="nim" placeholder="NIM Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label for="prodi">Program Studi</label>
+                <input class="input" type="text" name="prodi" id="prodi" placeholder="Program Studi Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label for="fakultas">Fakultas</label>
+                <input class="input" type="text" name="fakultas" id="fakultas" placeholder="Fakultas Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label for="universitas">Universitas</label>
+                <input class="input" type="text" name="universitas" id="universitas" placeholder="Universitas Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label for="alamat">Alamat</label>
+                <textarea class="text_area" name="alamat" id="alamat" cols="30" rows="3" placeholder="Alamat Anda..." required> </textarea>
+            </div>
+
+            <div class="input_data">
+                <label for="kodepos">Kode Pos</label>
+                <input class="input" type="text" name="kodepos" id="kodepos" placeholder="Kode Pos Anda..." required autocomplete="off">
+            </div>
+
+            <div class="input_data">
+                <label>Alasan Anda Mengunjungi Website Saya</label>
+                <div class="check">
+                    <input type="checkbox" name="alasan1" value="konten">Saya menyukai konten yang anda tulis <br>
+                    <input type="checkbox" name="alasan2" value="rekomendasi">Saya mendapatkan rekomendasi website yang bagus <br>
+                    <input type="checkbox" name="alasan3" value="tidaksengaja">Saya tidak sengaja mengunjungi website anda <br>
+                    <input type="checkbox" name="alasan4" value="melihat">Saya berkunjung hanya untuk melihat-lihat saja <br>
+                    <input type="checkbox" name="alasan5" value="tidaktahu">Saya pun tidak tahu mengapa saya berkunjung ke website Anda <br>
+                    <input type="checkbox" name="alasan6" value="mengisi">Saya berkunjung hanya untuk mengisi formulir dan mengomentari website Anda <br>
+                    <input type="checkbox" name="alasan7" value="tersendiri">Saya mempunyai alasan tersendiri mengapa saya mengunjungi website Anda <br>
+                    <input type="checkbox" name="alasan8" value="tidakmemiliki">Saya tidak memiliki alasan
+                </div>
+            </div>
+
+            <div class="input_data">
+                <label for="kritiksaran">Kritik & Saran</label>
+                <textarea class="text_area" name="kritiksaran" id="kritiksaran" cols="30" rows="3" placeholder="Kritik & Saran Anda..." required> </textarea>
+            </div>
+
+            <div class="input_data">
+                <input type="reset" name="reset" value="Reset Formulir" class="reset">
+                <input type="submit" name="submit" value="Submit Formulir" class="submit">
+            </div>
+
+        </div>
+    </form>
+</div>
+    
+<div class="kembali">
+        <a href="https://febrizuladhari.github.io/TugasHTML1/" style="text-decoration:none" target="_blank">Klik Untuk Kembali ke Halaman Utama</a>
+</div>
+
+<div class="footer">
+    &#169; 2021 &#8739; Written and Designed by Febri Zuladhari Bangun
+</div>
+
+</body>
+</html>

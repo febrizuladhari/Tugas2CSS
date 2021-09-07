@@ -1,0 +1,231 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    background: linear-gradient(to top right, #4568dc 0%, #b06ab3 100%);
+
+}
+
+/*  Daftar  */
+h1{
+    color: white;
+    text-decoration-line: underline;
+}
+
+.kembali{
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    bottom: -1500px;
+}
+
+a{
+    color: rgb(255, 251, 40);
+    font-weight: bold;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    color: white;
+    bottom: -2100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form_daftar{
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    box-shadow: 0px 0px 25px 10px black;
+    border-radius: 15px;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+.form_daftar input[type="text"], 
+.form_daftar input[type="password"]{ 
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    border: 5px solid red;
+    outline: none;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 350px;
+    transition: 3s;
+}
+
+.form_daftar input[type="text"]:focus, 
+.form_daftar input[type="password"]:focus-visible {
+    width: 500px;
+    border-color: rgb(0, 247, 255);
+}
+
+.form_daftar input[type="submit"]{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 100px;
+    border: 5px solid rgb(255, 0, 200);
+    outline: none;
+    background: none;
+    display: block;
+    margin: 50px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 150px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.form_daftar input[type="submit"]:hover{
+    background: rgb(124, 255, 120);
+}
+
+
+
+/*  Formulir */
+.kotak_form{
+    font-size: 20px;
+    position: relative;
+    max-width: 100%;
+    margin: 50% auto;
+    background: #8A77DF;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding: 30px;
+    box-shadow: 0px 0px 25px 10px black;
+    border-radius: 15px;
+}
+
+.kotak_form .judul{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #FEFE33;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.kotak_form .formulir{
+    width: 100%;
+}
+
+.kotak_form .formulir .input_data{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.kotak_form .formulir label{
+    width: 200px;
+    color: #000000;
+    margin-right: 10px;
+    font-size: 22px;
+    text-shadow: 5px -5px 30px #f2ff3e;
+}
+
+.kotak_form .formulir .input_data .input,
+.kotak_form .formulir .input_data .text_area{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 2s ease;
+}
+
+.kotak_form .formulir .input_data .text_area{
+    width: 100%;
+    height: 125px;
+    resize: none;
+}
+
+.kelamin{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.kotak_form .formulir .input_data .agama{
+    position: relative;
+    width: 100%;
+    height: 35;
+}
+
+.kotak_form .formulir .input_data .agama:before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.kotak_form .formulir .input_data .agama select{
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #00ffaa;
+    border-radius: 0;
+}
+
+
+.kotak_form .formulir .input_data .input:focus,
+.kotak_form .formulir .input_data .text_area:focus,
+.kotak_form .formulir .input_data .agama:focus{
+    border: 4px solid #00ff15;
+}
+
+.kotak_form .formulir .input_data .check{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.kotak_form .formulir .input_data .reset{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 25px; 
+    border: 0px;
+    background:  #ff4848;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    transition: 1s;
+}
+
+.kotak_form .formulir .input_data .reset:hover{
+    background: #00ff15;
+}
+
+.kotak_form .formulir .input_data .submit{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 25px; 
+    border: 0px;
+    background:  #ff4848;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    transition: 1s;
+}
+
+.kotak_form .formulir .input_data .submit:hover{
+    background: #00ff15;
+}
